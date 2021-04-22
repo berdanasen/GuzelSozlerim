@@ -43,12 +43,12 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="d-flex footer text-muted">
         <div class="container">
             &copy; 2021 - GuzelSozlerim - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
 
-        <span class="float-right">
+        <span class="mr-auto">
             @*@await Component.InvokeAsync("RastgeleSoz")*@
             @*@await Component.InvokeAsync("RastgeleSoz", new { enYeniyiGoster = true })*@
             <vc:rastgele-soz en-yeniyi-goster="false"></vc:rastgele-soz>
